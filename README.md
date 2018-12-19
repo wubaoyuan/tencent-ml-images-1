@@ -106,8 +106,6 @@ Due to this point, there are also a few repeated images in our database, but our
 
 #### [Download Images from Open Images](#download-images-from-open-images)
 
-    <!--- ##### For URLs from Open Images --->
-
 <!---
 * train_urls.txt ([link1](https://drive.google.com/open?id=1ExY0GpRWxGzDHAI-p44m-B0AB76NeLy7), [link2](https://pan.baidu.com/s/1cx6n6CYNqegKVq1O2YVCJg))
 * val_urls.txt ([link1](https://drive.google.com/open?id=13SSar872e73UcshIW7IGbmvUGcFjHyxg), [link2](https://pan.baidu.com/s/1BfipStD2PY7MAMRoZa9ecg))
