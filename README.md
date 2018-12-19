@@ -20,6 +20,8 @@ This repository introduces the open-source project dubbed **Tencent ML-Images**,
 * [Data](#data)
   * [Image Source](#image-source)
   * [Download Images](#download-images)
+    * [Download Images from ImageNet](#download-images-from-imagenet)
+    * [Download Images from Open Images](#download-images-from-open-images)
   * [Semantic Hierarchy](#semantic-hierarchy)
   * [Annotations](#annotations)
   * [Statistics](#statistics)
@@ -86,7 +88,9 @@ We provide the following four files:
 * train_urls_from_imagenet.txt
 * val_urls_from_imagenet.txt
 
-##### Download images from ImageNet
+<!--- ##### Download images from ImageNet --->
+
+#### [Download Images from ImageNet](#download-images-from-imagenet)
 We find that massive urls provided by ImageNet have expired (please check the file `List of all image URLs of Fall 2011 Release` at http://image-net.org/download-imageurls). Thus, here we provide the original image IDs of ImageNet used in our database. One can obtain the training/validation images of our database through the following steps:
 * Download the whole database of [ImageNet](http://image-net.org/download-images)
 * Extract the training/validation images using the image IDs in `train_image_id_from_imagenet.txt` and `val_image_id_from_imagenet.txt`
@@ -103,7 +107,9 @@ As shown above, one image corresponds to one row. The first term is the original
 **NOTE**: There are some repeated URLs in `List of all image URLs of Fall 2011 Release` of ImageNet, \ie, the image corresponding to one URL may be stored multiple times with different image IDs in ImageNet. 
 
 
-##### For URLs from Open Images
+#### [Download Images from Open Images](#download-images-from-open-images)
+
+    <!--- ##### For URLs from Open Images --->
 
 <!---
 * train_urls.txt ([link1](https://drive.google.com/open?id=1ExY0GpRWxGzDHAI-p44m-B0AB76NeLy7), [link2](https://pan.baidu.com/s/1cx6n6CYNqegKVq1O2YVCJg))
