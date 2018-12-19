@@ -8,7 +8,7 @@ This repository introduces the open-source project dubbed **Tencent ML-Images**,
 ## Updates
 
 * [2018/12/19] We simply the procedure of downloading images. Please see [Download Images](#download-images).
-* [2018/12/22] We release one ArXiv manuscript at XXX, to demonstrate the details of our database, the loss function and training algorithm, as well as results. 
+<!--- * [2018/12/22] We release one ArXiv manuscript at XXX, to demonstrate the details of our database, the loss function and training algorithm, as well as results.  --->
 
 
 # Contents
