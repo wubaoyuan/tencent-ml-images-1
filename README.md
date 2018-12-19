@@ -12,9 +12,10 @@ This repository introduces the open-source project dubbed **Tencent ML-Images**,
 
 <!--- * **NOTE**: A part of URLs of ML-Images is collected from [ImageNet](http://www.image-net.org/). However, many URLs from ImageNet have expired. Thus, we also provide the correpsonding image indexes of ImageNet for these URLs in ML-Images. Then, you can obtain the original image from ImageNet, if the URL is invalid. Please see [How to handle the invalid URLs during downloading?](#invalid-URLs) for details.
 * We provide a new file [download_urls_multithreading.sh](data/download_urls_multithreading.sh), which could download images using multi-threading module. Most URLs that are not from ImageNet are valid. Please refer to  `Download Images using URLs` for details.
--->
 * **NOTE**: A clear demonstration about how to download the original images using URLs has been added into the subsection `How to handle the invalid URLs during downloading?`
 * A demo for single-label image classification has been added to `Single-Label Image Classification`. One can use the provided checkpoint to predict the label of any custom image.
+-->
+
 
 # Contents
 
@@ -29,11 +30,12 @@ This repository introduces the open-source project dubbed **Tencent ML-Images**,
   * [Annotations](#annotations)
   * [Statistics](#statistics)
   
-* [Train](#train)
-  <!---
+    <!---
   * [Download Images using URLs](#download-images-using-urls)
     * [How to handle invalid URLs during downloading?](#How-to-handle-invalid-URLs-during-downloading)
   --->
+  
+* [Train](#train)
   * [Prepare the TFRecord File](#prepare-the-tfrecord-file)
   * [Pretrain on ML-Images](#pretrain-on-ml-images)
   * [Finetune on ImageNet](#finetune-on-imagenet)
