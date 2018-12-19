@@ -18,8 +18,8 @@ This repository introduces the open-source project dubbed **Tencent ML-Images**,
 * [Dependencies](#dependencies)
 
 * [Data](#data)
-  * [Download](#download)
   * [Image Source](#image-source)
+  * [Download Images](#download-images)
   * [Semantic Hierarchy](#semantic-hierarchy)
   * [Annotations](#annotations)
   * [Statistics](#statistics)
@@ -50,26 +50,6 @@ This repository introduces the open-source project dubbed **Tencent ML-Images**,
 # [Data](#data)
 [[back to top](#)]
 
-### [Download](#download)
-[[back to top](#)]
-
-* train_urls.txt ([link1](https://drive.google.com/open?id=1ExY0GpRWxGzDHAI-p44m-B0AB76NeLy7), [link2](https://pan.baidu.com/s/1cx6n6CYNqegKVq1O2YVCJg))
-* val_urls.txt ([link1](https://drive.google.com/open?id=13SSar872e73UcshIW7IGbmvUGcFjHyxg), [link2](https://pan.baidu.com/s/1BfipStD2PY7MAMRoZa9ecg))
-
-The image URLs and the corresponding annotations can be downloaded above. 
-<!---
-from [train_urls.txt](https://pan.baidu.com/s/1cx6n6CYNqegKVq1O2YVCJg) and [val_urls.txt](https://pan.baidu.com/s/1BfipStD2PY7MAMRoZa9ecg). Please move the downloaded txt file into `data/`. 
---->
-The format of `train_urls.txt` is as follows
-
-```
-...
-https://c4.staticflickr.com/8/7239/6997334729_e5fb3938b1_o.jpg  3:1  5193:0.9  5851:0.9 9413:1 9416:1
-https://c2.staticflickr.com/4/3035/3033882900_a9a4263c55_o.jpg  1053:0.8  1193:0.8  1379:0.8
-...
-```
-As shown above, one image corresponds to one row. The first term is the image URL. The followed terms separated by space are the annotations. For example, "5193:0.9" indicates class 5193 and its confidence 0.9. Note that the class index starts from 0, and you can find the class name from the file [data/dictionary_and_semantic_hierarchy.txt](data/dictionary_and_semantic_hierarchy.txt).
-
 ### [Image Source](#image-source)
 [[back to top](#)]
 
@@ -96,6 +76,54 @@ Finally, the number of remained URLs is 17,659,752, and the number of categories
 <!---
 Consequently,  8,385,050 training URLs and 159,424 validation URLs are remained, covering 2,039 categories.
 --->
+
+### [Download Images](#download-images)
+[[back to top](#)]
+
+We provide the following four files:
+* train_image_id_from_imagenet.txt
+* val_image_id_from_imagenet.txt
+* train_urls_from_imagenet.txt
+* val_urls_from_imagenet.txt
+
+##### Download images from ImageNet
+We find that massive urls provided by ImageNet have expired (please check the file `List of all image URLs of Fall 2011 Release` at http://image-net.org/download-imageurls). Thus, here we provide the original image IDs of ImageNet used in our database. One can obtain the training/validation images of our database through the following steps:
+* Download the whole database of [ImageNet](http://image-net.org/download-images)
+* Extract the training/validation images using the image IDs in `train_image_id_from_imagenet.txt` and `val_image_id_from_imagenet.txt`
+
+The format of `train_image_id_from_imagenet.txt` is as follows:
+```
+...
+n04310904/n04310904_8388.JPEG   2367:1  2172:1  1831:1  1054:1  1041:1  865:1   2:1
+n11753700/n11753700_1897.JPEG   5725:1  5619:1  5191:1  5181:1  5173:1  5170:1  1042:1  865:1   2:1
+...
+```
+As shown above, one image corresponds to one row. The first term is the original image ID of ImageNet. The followed terms separated by space are the annotations. For example, "2367:1" indicates class 2367 and its confidence 1. Note that the class index starts from 0, and you can find the class name from the file [data/dictionary_and_semantic_hierarchy.txt](data/dictionary_and_semantic_hierarchy.txt).
+
+**NOTE**: There are some repeated URLs in `List of all image URLs of Fall 2011 Release` of ImageNet, \ie, the image corresponding to one URL may be stored multiple times with different image IDs in ImageNet. 
+
+
+##### For URLs from Open Images
+
+<!---
+* train_urls.txt ([link1](https://drive.google.com/open?id=1ExY0GpRWxGzDHAI-p44m-B0AB76NeLy7), [link2](https://pan.baidu.com/s/1cx6n6CYNqegKVq1O2YVCJg))
+* val_urls.txt ([link1](https://drive.google.com/open?id=13SSar872e73UcshIW7IGbmvUGcFjHyxg), [link2](https://pan.baidu.com/s/1BfipStD2PY7MAMRoZa9ecg))
+--->
+
+The image URLs and the corresponding annotations can be downloaded above. 
+<!---
+from [train_urls.txt](https://pan.baidu.com/s/1cx6n6CYNqegKVq1O2YVCJg) and [val_urls.txt](https://pan.baidu.com/s/1BfipStD2PY7MAMRoZa9ecg). Please move the downloaded txt file into `data/`. 
+--->
+The format of `train_urls.txt` is as follows
+
+```
+...
+https://c4.staticflickr.com/8/7239/6997334729_e5fb3938b1_o.jpg  3:1  5193:0.9  5851:0.9 9413:1 9416:1
+https://c2.staticflickr.com/4/3035/3033882900_a9a4263c55_o.jpg  1053:0.8  1193:0.8  1379:0.8
+...
+```
+As shown above, one image corresponds to one row. The first term is the image URL. The followed terms separated by space are the annotations. For example, "5193:0.9" indicates class 5193 and its confidence 0.9. Note that the class index starts from 0, and you can find the class name from the file [data/dictionary_and_semantic_hierarchy.txt](data/dictionary_and_semantic_hierarchy.txt).
+
 
 
 ### [Semantic Hierarchy](#semantic-hierarchy)
