@@ -78,7 +78,7 @@ Consequently,  8,385,050 training URLs and 159,424 validation URLs are remained,
 ### [Download Images](#download-images)
 [[back to top](#)]
 
-We provide the following four files:
+Due to the copyright, we cannot provide the original images directly. However, one can obtain all images of our database using the following files:
 * train_image_id_from_imagenet.txt ([Link1](https://drive.google.com/file/d/1-7x4wPa764MJkjhhNj0PWPhgwMJOXziA/view?usp=sharing), [Link2](https://pan.baidu.com/s/1oUfIMCHj1wyz0ywuSn1iEQ))
 * val_image_id_from_imagenet.txt ([Link1](https://drive.google.com/file/d/1-1x1vJFZGesz-5R2W8DLWHaVEbIPjuJs/view?usp=sharing), [Link2](https://pan.baidu.com/s/10prwZcHstYA8ppyXxbEbXA))
 * train_urls_from_openimages.txt ([Link1](https://drive.google.com/file/d/1__HFVimF5yUwlyEjaUoSmBBfRQKJTYKW/view?usp=sharing), [Link2]( https://pan.baidu.com/s/1jjkaLu5JiHV6D0qyWXSxMA ))
@@ -101,7 +101,7 @@ n11753700/n11753700_1897.JPEG   5725:1  5619:1  5191:1  5181:1  5173:1  5170:1  
 As shown above, one image corresponds to one row. The first term is the original image ID of ImageNet. The followed terms separated by space are the annotations. For example, "2367:1" indicates class 2367 and its confidence 1. Note that the class index starts from 0, and you can find the class name from the file [data/dictionary_and_semantic_hierarchy.txt](data/dictionary_and_semantic_hierarchy.txt).
 
 **NOTE**: We find that there are some repeated URLs in `List of all image URLs of Fall 2011 Release` of ImageNet, i.e., the image corresponding to one URL may be stored in multiple sub-folders with different image IDs. We manually check a few repeated images, and find the reason is that one image annotated with a child class may also be annotated with its parent class, then it is saved to two sub-folders with different image IDs. To the best of our knowledge, this point has never been claimed in ImageNet or any other place. If one want to use ImageNet, this point should be noticed. 
-Due to this point, there are also a few repeated images in our database, but our training is not significantly influenced. In future, we will update the database by removing the repeated images. 
+Due to that, there are also a few repeated images in our database, but our training is not significantly influenced. In future, we will update the database by removing the repeated images. 
 
 
 #### [Download Images from Open Images](#download-images-from-open-images)
