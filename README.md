@@ -79,10 +79,10 @@ Consequently,  8,385,050 training URLs and 159,424 validation URLs are remained,
 [[back to top](#)]
 
 We provide the following four files:
-* train_image_id_from_imagenet.txt ([Link1](https://drive.google.com/file/d/1-7x4wPa764MJkjhhNj0PWPhgwMJOXziA/view?usp=sharing), [Link2]())
-* val_image_id_from_imagenet.txt ([Link1](https://drive.google.com/file/d/1-1x1vJFZGesz-5R2W8DLWHaVEbIPjuJs/view?usp=sharing), [Link2]())
-* train_urls_from_openimages.txt ([Link1](https://drive.google.com/file/d/1__HFVimF5yUwlyEjaUoSmBBfRQKJTYKW/view?usp=sharing), [Link2]())
-* val_urls_from_openimages.txt ([Link1](https://drive.google.com/file/d/1JkTcEEkB1zYI6NtAM-vXpsv7uDZ3glEz/view?usp=sharing), [Link2])
+* train_image_id_from_imagenet.txt ([Link1](https://drive.google.com/file/d/1-7x4wPa764MJkjhhNj0PWPhgwMJOXziA/view?usp=sharing), [Link2](https://pan.baidu.com/s/1oUfIMCHj1wyz0ywuSn1iEQ))
+* val_image_id_from_imagenet.txt ([Link1](https://drive.google.com/file/d/1-1x1vJFZGesz-5R2W8DLWHaVEbIPjuJs/view?usp=sharing), [Link2](https://pan.baidu.com/s/10prwZcHstYA8ppyXxbEbXA))
+* train_urls_from_openimages.txt ([Link1](https://drive.google.com/file/d/1__HFVimF5yUwlyEjaUoSmBBfRQKJTYKW/view?usp=sharing), [Link2]( https://pan.baidu.com/s/1jjkaLu5JiHV6D0qyWXSxMA ))
+* val_urls_from_openimages.txt ([Link1](https://drive.google.com/file/d/1JkTcEEkB1zYI6NtAM-vXpsv7uDZ3glEz/view?usp=sharing), [Link2](https://pan.baidu.com/s/1F8mk58IGj9BP0-HSF-M9aw))
 
 <!--- ##### Download images from ImageNet --->
 
